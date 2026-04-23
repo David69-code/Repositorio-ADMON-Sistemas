@@ -56,8 +56,7 @@ namespace Semana09_PatronBuilder
         }
 
         // Método para mostrar el menú principal
-        // Indicación para explicar: "El menú permite al usuario elegir qué parte del patrón Builder demostrar,
-        // haciendo el programa más interactivo y profesional."
+     
         static void MostrarMenuPrincipal()
         {
             Console.WriteLine("=====================================");
@@ -72,10 +71,8 @@ namespace Semana09_PatronBuilder
         }
 
         // Caso 1: Usuarios con Builder
-        // Indicación para explicar: "Aquí se muestra el patrón Builder para crear objetos Usuario.
+        // Aquí se muestra el patrón Builder para crear objetos Usuario.
         // Solo se requieren nombre, email y contraseña (obligatorios).
-        // Los demás datos son opcionales y se agregan con métodos encadenados (fluent interface).
-        // Esto evita constructores con muchos parámetros y hace el código más legible."
         static void EjecutarCaso1Usuarios()
         {
             Console.WriteLine("=== CASO 1: Registro de usuarios ===\n");
@@ -97,10 +94,10 @@ namespace Semana09_PatronBuilder
         }
 
         // Caso 2: Reportes con Builder
-        // Indicación para explicar: "Aquí se usa el patrón Builder para crear objetos Reporte.
+        // "Aquí se usa el patrón Builder para crear objetos Reporte.
         // Solo el título es obligatorio. Las demás secciones (autor, fecha, gráfico, conclusiones, comentarios)
         // son opcionales y se agregan según se necesite.
-        // Esto permite generar reportes muy diferentes con la misma estructura base."
+        
         static void EjecutarCaso2Reportes()
         {
             Console.WriteLine("=== CASO 2: Generación de reportes ===\n");
@@ -125,9 +122,7 @@ namespace Semana09_PatronBuilder
             Console.WriteLine(reporteStark);
         }
 
-        // Método para ejecutar ambos casos seguidos
-        // Indicación para explicar: "Esta opción muestra cómo el mismo código puede ejecutar ambos casos
-        // sin repetir lógica, reutilizando los métodos ya creados."
+       
         static void EjecutarAmbosCasos()
         {
             EjecutarCaso1Usuarios();

@@ -2,10 +2,10 @@
 
 namespace Semana09_PatronBuilder
 {
-    /// <summary>
+
     /// Builder para crear reportes de forma flexible.
     /// Solo obliga al título, el resto es opcional.
-    /// </summary>
+   
     public class ReporteBuilder
     {
         private readonly string _titulo;

@@ -2,25 +2,24 @@
 
 namespace Semana09_PatronBuilder
 {
-    /// <summary>
+  
     /// Clase que representa un usuario del sistema.
     /// Todas las propiedades son de solo lectura desde fuera (private set).
     /// El constructor es internal para que solo el Builder pueda crear instancias.
-    /// </summary>
+  
     public class Usuario
     {
         public string Nombre { get; private set; }
         public string Email { get; private set; }
-        public string Password { get; private set; }  // En producción NUNCA guardar contraseña en texto plano
+        public string Password { get; private set; } 
 
         public string Rol { get; private set; }
         public string Telefono { get; private set; }
         public string Direccion { get; private set; }
         public bool EstaActiva { get; private set; } = true;
 
-        /// <summary>
-        /// Constructor privado/internal → solo accesible desde el mismo assembly (por el Builder)
-        /// </summary>
+       
+        /// Constructor internal 
         internal Usuario(string nombre, string email, string password)
         {
             if (string.IsNullOrWhiteSpace(nombre))

@@ -2,10 +2,10 @@
 
 namespace Semana09_PatronBuilder
 {
-    /// <summary>
+
     /// Clase que representa un reporte generado en el sistema.
     /// Muchas secciones son opcionales.
-    /// </summary>
+  
     public class Reporte
     {
         public string Titulo { get; private set; }

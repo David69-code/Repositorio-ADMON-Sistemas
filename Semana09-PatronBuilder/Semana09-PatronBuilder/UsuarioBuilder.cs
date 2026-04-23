@@ -1,9 +1,8 @@
 ﻿namespace Semana09_PatronBuilder
 {
-    /// <summary>
     /// Builder para crear objetos Usuario de forma flexible.
     /// Permite encadenar métodos (fluent interface) y solo obliga a los datos mínimos.
-    /// </summary>
+   
     public class UsuarioBuilder
     {
         // Campos obligatorios (se pasan en el constructor)
@@ -49,9 +48,9 @@
             return this;
         }
 
-        /// <summary>
+        
         /// Método final que construye y devuelve el objeto Usuario completo
-        /// </summary>
+        
         public Usuario Build()
         {
             // Creamos el objeto con los datos obligatorios
